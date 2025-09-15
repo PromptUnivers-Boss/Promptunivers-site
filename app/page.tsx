@@ -1,10 +1,15 @@
 import Image from "next/image";
+
 export default function Home() {
   return (
-    <main style={{padding:"2rem"}}>
-      <h1>PromptUnivers</h1>
-      <p>Site Next.js prêt à déployer.</p>
-      <Image src="/Logos/logo.png" alt="logo" width={120} height={120}/>
-    </main>
+    <section className="grid gap-8">
+      <h1 className="text-4xl font-extrabold">Boost your productivity ⚡</h1>
+      <p className="text-lg text-gray-600">
+        PromptUnivers — un univers de possibilités, une solution pour chaque besoin.
+      </p>
+      <div className="mt-4">
+        <Image src="/logos/logo.png" alt="Logo PromptUnivers" width={220} height={220} priority />
+      </div>
+    </section>
   );
 }
