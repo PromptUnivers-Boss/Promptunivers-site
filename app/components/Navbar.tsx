@@ -1,21 +1,36 @@
-'use client';
-import Link from "next/link";
+// ~/promptunivers-site/app/components/Navbar.tsx
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="w-full border-b bg-white/70 backdrop-blur sticky top-0 z-50">
-      <nav className="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
-          <Image src="/logos/logo.png" alt="PromptUnivers" width={40} height={40} priority />
-          <span className="font-bold text-xl">PromptUnivers</span>
+    <header className="flex justify-between items-center px-8 py-4 bg-black border-b border-gray-800">
+      <div className="flex items-center gap-3">
+        <Image
+          src="/logo/logo.png"
+          alt="Prompt Univers"
+          width={48}
+          height={48}
+          className="h-12 w-auto"
+        />
+        <span className="text-2xl font-bold text-cyan-400">
+          Prompt<span className="text-orange-500">⚡</span>Univers
+        </span>
+      </div>
+      <nav className="flex gap-6">
+        <Link href="/fr/packs" className="hover:text-cyan-400">
+          Packs
         </Link>
-        <ul className="flex items-center gap-5 text-sm">
-          <li><Link href="/services" className="hover:underline">Services</Link></li>
-          <li><Link href="/pricing" className="hover:underline">Tarifs</Link></li>
-          <li><Link href="/contact" className="px-3 py-1 rounded bg-black text-white hover:opacity-90">Contact</Link></li>
-        </ul>
+        <Link href="/fr/about" className="hover:text-orange-500">
+          À propos
+        </Link>
+        <Link href="/fr/contact" className="hover:text-cyan-400">
+          Contact
+        </Link>
       </nav>
     </header>
   );
 }
+
