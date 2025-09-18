@@ -1,0 +1,33 @@
+[main 3bbdeb7] Auto deploy 2025-09-15_20:00:05
+ 32 files changed, 2992 insertions(+), 2060 deletions(-)
+ create mode 100644 .eslintrc.json
+ create mode 100644 .prettierrc
+ create mode 100644 .vscode/extensions.json
+ create mode 100644 .vscode/settings.json
+ create mode 100644 .vscode/tasks.json
+ create mode 100644 app/components/Footer.tsx
+ create mode 100755 fix-next.sh
+ create mode 100644 logs/autodeploy.log
+ create mode 100644 logs/autosync.log
+ create mode 100644 netlify/functions/webhook-sale.js
+ create mode 100644 next.config.cjs
+ create mode 100644 next.config.js
+ create mode 100644 next.config.mjs
+ delete mode 100644 package-lock.json
+ create mode 100644 pnpm-lock.yaml
+ create mode 100644 pnpm-workspace.yaml
+ create mode 100644 postcss.config.js
+ delete mode 100644 postcss.config.mjs
+ create mode 100644 public/logos/78af679c-ff70-4274-82ad-5c763a9a7d6b.png
+ create mode 100755 reset.sh
+ create mode 100755 scripts/autobackup.sh
+ create mode 100755 scripts/autocorrect.sh
+ create mode 100755 scripts/autodeploy.sh
+ create mode 100755 scripts/autopacks.sh
+ create mode 100755 scripts/autosync.sh
+ create mode 100644 scripts/generate-icons.mjs
+ create mode 100644 tailwind.config.js
+remote: This repository moved. Please use the new location:        
+remote:   git@github.com:PromptUnivers-Boss/Promptunivers-site.git        
+To github.com:promptunivers-boss/promptunivers-site.git
+   f443fe4..3bbdeb7  main -> main
